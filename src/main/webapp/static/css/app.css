@@ -1,0 +1,525 @@
+html {
+	
+}
+
+body {
+	height: 100%;
+}
+
+.section {
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+/*---------  note book paper ------------------*/
+.paper-container {
+	margin: auto;
+	position: relative;
+	padding-top: 20px;
+}
+
+.paper-container, .paper {
+	height: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.paper {
+	background: #fafafa;
+    box-shadow: 6px 6px 5px gray;
+    width: 100%;
+    padding: 5px;
+    left:100px;
+    overflow-y: auto;
+}
+
+.paper_title {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.paper-text-title {
+  color: black;
+  font-size: 3em;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.paper-row {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  padding-top: 3px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 18px;
+}
+.paper::after {
+	content:''; 
+	position:absolute; 
+	width:0px; 
+	top:20px; 
+	left:100px; 
+	bottom:0; 
+	border-left:1px solid #ff0000;
+	}
+	
+/*---------  paper table ------------------*/
+#paper-table {
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+
+#paper-table li.header div {
+	font-weight: bold;
+	cursor: default;
+}
+
+#paper-table li div {
+	display: block;
+	float: left;
+}
+
+#paper-table li div.listitem-firstname {
+	width: 20%;
+	
+}
+#paper-table li div.listitem-lastname {
+	width: 20%;
+	
+}
+#paper-table li div.listitem-email {
+	width: 35%;
+	
+}
+#paper-table li div.listitem-username {
+	width: 15%;
+	
+}
+#paper-table li div.listitem-sendmail {
+	width: 15%;
+	
+}
+#paper-table li div.listitem-edit {
+	width: 15%;
+	
+}
+#paper-table li div.listitem-delete {
+	width: 15%;
+}
+#paper-table li div.listitem-id {
+	width: 15%;
+}
+#paper-table li div.listitem-question1 {
+	width: 40%;
+}
+
+/*---------  note book login card ------------------*/
+.login-card-container {
+	margin: auto;
+	position: relative;
+	padding-top: 20px;
+}
+
+.login-card-container, .login-card {
+	height: auto;
+	min-height: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.login-card {
+	background: #fafafa;
+    box-shadow: 6px 6px 5px gray;
+    width: 100%;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.login-card-title {
+  height: 70px;
+  width: 100%;
+  position: relative;
+}
+
+.login-card-row {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  padding-top: 3px;
+  font-size: 18px;
+}
+
+/*---------  Splash Page Cards------------------*/
+.card-container {
+	margin: auto;
+	position: relative;
+	padding-top: 20px;
+}
+
+.card-container, .card {
+	height: auto;
+	min-height: 300px;
+}
+
+.card {
+	background: #fafafa;
+    box-shadow: 6px 6px 5px gray;
+    width: 100%;
+    padding: 5px;
+}
+
+.card-title {
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+
+.text-title {
+  color: black;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.redline {
+  width: 100%;
+  background-color: red;
+  height: 4px;
+}
+
+.blueline {
+  width: 100%;
+  background-color: steelblue;
+  height: 2px;
+}
+
+.card-row {
+  height: 30px;
+  width: 100%;
+  position: relative;
+  font-size: 18px;
+}
+
+.text {
+  color: black;
+  font-size: 1em;
+  bottom: 0;
+  position: absolute;
+}
+
+/*---------- Modified to fit half ------------*/
+
+.card-container-half {
+	margin: auto;
+	position: relative;
+	padding-top: 20px;
+}
+
+.card-container-half, .card-half {
+	height: auto;
+	min-height: 150px;
+}
+
+.card-half {
+	background: #fafafa;
+    box-shadow: 6px 6px 5px gray;
+    width: 100%;
+    padding: 5px;
+}
+
+/*---------- Card animation -------------------*/
+.card:hover, .card:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -o-transform:rotate(-6deg);
+  -webkit-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+  position:relative;
+  z-index:5;
+}
+
+.card-half:hover, .card-half:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  z-index:5;
+}
+/*---------- End splash page cards ------------*/
+.floatRight {
+	float: right;
+	margin-right: 18px;
+}
+
+.has-error {
+	color: red;
+}
+
+.generic-container {
+	position: fixed;
+	width: 80%;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #EAE7E7;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 0 30px black;
+}
+
+.home-container {
+	position: fixed;
+	border-radius: 25px;
+	width: 80%;
+	height: 90%;
+	margin-left: 10%;
+	margin-top: 1%;
+	padding: 20px;
+	background-image: url("../images/wood1.jpg");
+	box-shadow: 0 0 30px black;
+	overflow: auto;
+}
+
+/************************** Title Text **********************/
+.title{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 5em;
+  position: relative;
+  color: #2C3E50;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fafafa;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-70deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(70deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/***************************  Nav Bar  **********************/
+.dropdown-menu>li>a,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav >.active>a,
+.navbar-default .navbar-header>a,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a
+{
+    color:#2C3E50;
+	transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s
+}
+.dropdown-menu>li>a:hover,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav >.active>a,
+.navbar-default .navbar-header>a:hover,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
+{
+	color:#FFFFFF;
+	background:#2C3E50
+}
+a
+{
+    cursor:pointer;
+}
+a:hover .fa
+{
+    -webkit-animation:fa-spin 1s;animation:fa-spin 1s
+}
+
+/* PULSE */
+@keyframes pulse {
+	0% {transform: scale(1.1)}
+ 	50% {transform: scale(0.8)}
+ 	100% {transform: scale(1.1)}
+}
+
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
+	animation: pulse 3s linear infinite;
+}
+
+/* SPIN */
+@keyframes spin{
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(359deg)}
+}
+
+.faa-spin.animated,
+.faa-spin.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-spin {
+	animation: spin 2.2s linear infinite;
+}
+
+/* TADA */
+@keyframes tada {
+	0% {transform: scale(1)}
+	10%,20% {transform:scale(.9) rotate(-8deg);}
+	30%,50%,70% {transform:scale(1.3) rotate(8deg)}
+	40%,60% {transform:scale(1.3) rotate(-8deg)}
+	80%,100% {transform:scale(1) rotate(0)}
+}
+
+.faa-tada.animated,
+.faa-tada.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-tada {
+	animation: tada 1s linear infinite;
+}
+
+/* VERTICAL */
+@keyframes vertical {
+	0%{transform:translate(0,-3px)}
+	4%{transform:translate(0,3px)}
+	8%{transform:translate(0,-3px)}
+	12%{transform:translate(0,3px)}
+	16%{transform:translate(0,-3px)}
+	20%{transform:translate(0,3px)}
+	22%,100%{transform:translate(0,0)}
+}
+
+.faa-vertical.animated,
+.faa-vertical.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-vertical {
+	animation: vertical 4s ease infinite;
+}
+
+/* TUTOR PROFILE CSS  THIS IS WHERE CAT BEGINS HER MISCHIEF!!!!!!!!*/
+.tutorProfile
+{
+	font-weight: bold;
+    font-size: 20px;
+}
+
+h1
+{
+	text-align: center;
+}
+
+.tutorSearch
+{
+	padding:5px;
+}
+.searchResults 
+{
+	width: 90%;
+    padding:5px;
+}
+
+.profileLeft
+{
+	width:30%;
+    margin: left;
+    
+    position:fixed;
+}
+
+.profileImage
+{
+	width: 200px;
+    height:200px;
+    margin:auto;
+    
+    border-radius: 50%;
+    border: solid black 1px;
+    background-image: url("tutorHead.png");
+    background-size: 100% 100%;
+    
+}
+
+.ratingContainer
+{
+	width: 75%;
+    height: 50px;
+    margin:auto;
+    border: solid black 1px;
+    
+    display:flex;
+}
+
+.onePen, .twoPen, .threePen, .fourPen, .fivePen
+{
+	flex-grow:5;
+    
+    background-image: url('tutorHead.png');
+    background-size: 100% 100%;
+}
+
+.profileRight
+{
+	width: 60%;
+    float:right;
+}
+
+#reviews
+{
+	width: 100%;
+    padding: 20px;
+}
